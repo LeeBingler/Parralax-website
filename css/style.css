@@ -1,0 +1,150 @@
+/*
+** EPITECH PROJECT, 2023
+** style
+** File description:
+** ezar
+*/
+
+body {
+    padding: 0;
+    margin: 0;
+    min-height: 100vh;
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    padding-left: 5%;
+    font-size: 4vw;
+    pointer-events: none;
+}
+
+nav {
+    display: flex;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    padding: 6px 15px;
+    margin: 0px 10px;
+    border-radius: 20px;
+    font-weight: 600;
+}
+
+nav a:hover, nav a.active {
+    background-color: black;
+    color: white;
+}
+
+
+.parallax {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#text {
+    position: absolute;
+    font-size: 8vw;
+    color: white;
+    text-shadow:
+        0.2px 0.2px 122.9px rgba(0, 0, 0, 0.041),
+        1.9px 1.8px 112.3px rgba(0, 0, 0, 0.199),
+        6.4px 6.1px 96.7px rgba(0, 0, 0, 0.221),
+        24px 23px 80px rgba(0, 0, 0, 0.22);
+}
+
+.parallax div {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+}
+
+#hill1 {
+    background-image: url("../picture/hill1.png");
+    background-size: cover;
+}
+
+#hill2 {
+    background-image: url("../picture/hill2.png");
+    background-size: cover;
+}
+
+#hill3 {
+    background-image: url("../picture/hill3.png");
+    background-size: cover;
+}
+
+#hill4 {
+    background-image: url("../picture/hill4.png");
+    background-size: cover;
+}
+
+#hill5 {
+    background-image: url("../picture/hill5.png");
+    background-size: cover;
+}
+
+#tree {
+    background-image: url("../picture/tree.png");
+    background-size: cover;
+}
+
+#leaf {
+    background-image: url("../picture/leaf.png");
+    background-size: cover;
+}
+
+#plant {
+    background-image: url("../picture/plant.png");
+    background-size: cover;
+}
+
+.sec {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-color: #003329;
+    color: white;
+    padding-top: 5%;
+    overflow: scroll;
+}
+
+.sec h2 {
+    font-size: 3em;
+    font-weight: 600;
+}
+
+.sec p {
+    font-size: 1em;
+    font-weight: 400;
+}
+
+@media screen and (max-width: 800px) and (min-width: 0px) {
+    header {
+        flex-direction: column;
+    }
+    .logo {
+        font-size: 2.5em;
+    }
+    nav {
+        justify-content: space-between;
+    }
+}
